@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Moralis SDK code -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightSpot</title>
+    <link href="/FrontEnd/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1><a href="/FrontEnd/index.html">euphoria</a></h1>
+      <ul type="none">
+        <li><a href="/FrontEnd/htmlFiles/upload.html">UPLOAD</a></li>
+        <li><a href="/FrontEnd/htmlFiles/retrieve.html">RETRIEVE</a></li>
+        <li><a href="/FrontEnd/htmlFiles/share.html">SHARE</a></li>
+      </ul>
+    </nav>
+    <section class="authenticate">
+      <button id="btn-login">Connect Wallet +</button>
+      <button id="btn-logout">Logout</button>
+    </section>
+    <main>
+      <div class="intro">
+        <h2>Upload your Files</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dicta
+          magnam, nam facilis quia nesciunt quas voluptatibus facere saepe
+          corrupti id iste iure in? Sunt quae similique minus hic ratione.
+        </p>
+      </div>
+      <div class="form">
+        <div class="card">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Name of File" />
+        </div>
+        <div class="card">
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="card">
+          <label for="File">Choose your File</label>
+          <input type="file" id="file" />
+        </div>
+        <div class="card">
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+          </select>
+        </div>
+      </div>
+      <button id="btn-upload">Upload</button>
+    </main>
+    <script src="/FrontEnd/uploadJs.js"></script>
+  </body>
+</html>
